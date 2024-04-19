@@ -4,6 +4,7 @@ import { MenuItem, OrderItem } from '../types'
 export default function useOrder(){
   
   const [order, setOrder] = useState<Array<OrderItem>>([]);
+  const [tip, setTip] = useState(0);
 
   const addItem = (item: MenuItem) => {
     const itemExists = order.find(orderItem => orderItem.id === item.id)
@@ -22,15 +23,22 @@ export default function useOrder(){
   }
 
   const removeItem = ( id: MenuItem['id'] ) => {
-    console.log('borrando', id);
     setOrder(order.filter(
       item => item.id !== id
     ))
   }
   
+  const placeOrder = () => {
+    setOrder([]);
+    setTip(0);
+  }
+
   return{
     order,
+    tip,
+    setTip,
     addItem,
     removeItem,
+    placeOrder,
   }
 }

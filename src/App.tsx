@@ -1,5 +1,6 @@
 
 import MenuItem from "./components/MenuItem";
+import OrderContent from "./components/OrderContent";
 import { menuItems } from "./data/db";
 import useOrder from "./hooks/useOrder";
 
@@ -26,8 +27,8 @@ function App() {
           </div>
         </section>
 
-        <section>
-          <h2>Consumo</h2>
+        <section className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
+          <OrderContent order={order} />
         </section>
       </main>
     </>

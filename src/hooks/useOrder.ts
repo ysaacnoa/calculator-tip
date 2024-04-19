@@ -18,12 +18,19 @@ export default function useOrder(){
     } else {
       const newItem: OrderItem = { ...item, quantity: 1 };
       setOrder([...order, newItem]);
-    }
-    
+    }  
+  }
+
+  const removeItem = ( id: MenuItem['id'] ) => {
+    console.log('borrando', id);
+    setOrder(order.filter(
+      item => item.id !== id
+    ))
   }
   
   return{
     order,
     addItem,
+    removeItem,
   }
 }

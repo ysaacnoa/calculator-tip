@@ -49,7 +49,7 @@ El componente `TipPercentage` proporciona opciones para calcular las propinas y 
 1. Clonar el Repositorio:
 
 ```bash
-git clone <[URL_DEL_REPOSITORIO](https://github.com/ysaacnoa/calculator-tip.git)>
+git clone https://github.com/ysaacnoa/calculator-tip.git
 ```
 
 2. Instalar Dependencias:

@@ -18,13 +18,16 @@ La página de selección de platillos de comida es una aplicación web desarroll
 - Tailwind CSS: Framework de diseño CSS utility-first.
 - useMemo: Hook de React utilizado para optimizar cálculos computacionalmente intensivos.
 
-## Estructura del Proyecto
+## Estructura principal del Proyecto
 
 ```
 src/
 |-- components/
-|   |-- DishSelector.tsx
-|   |-- TipCalculator.tsx
+|   |-- OrderTotals.tsx
+|   |-- OrderContent.tsx
+|   |-- TipPercentage.tsx
+|-- hooks/
+|   |-- useOrder.ts
 |-- App.tsx
 |-- App.css
 |-- index.tsx
@@ -35,18 +38,18 @@ src/
 
 ### DishSelector
 
-El componente `DishSelector` se encarga de mostrar el menú de platillos y calcular el monto total en tiempo real a medida que se seleccionan los platillos.
+El componente `OrderContent` es el componente que muestra el contenido en tiempo real de lo que se esta ordenando junto con el costo y la cantidad de cada item.
 
 ### TipCalculator
 
-El componente `TipCalculator` proporciona opciones para calcular las propinas y muestra el monto total final con y sin propinas.
+El componente `TipPercentage` proporciona opciones para calcular las propinas y muestra el monto total final con y sin propinas.
 
 ## Uso
 
 1. Clonar el Repositorio:
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <[URL_DEL_REPOSITORIO](https://github.com/ysaacnoa/calculator-tip.git)>
 ```
 
 2. Instalar Dependencias:

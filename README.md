@@ -1,7 +1,3 @@
-¡Entendido! Aquí tienes un esbozo de documentación en Markdown para tu página de selección de platillos de comida en React con TypeScript, utilizando Tailwind CSS y optimizaciones con useMemo:
-
----
-
 # Documentación de la Página de Selección de Platillos de Comida
 
 ## Descripción
@@ -74,11 +70,3 @@ npm start
 3. Realiza tus cambios y haz commits (`git commit -am 'Agrega nueva característica'`).
 4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
 5. Crea un nuevo pull request.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
-Este es solo un esbozo inicial. Puedes personalizar y expandir esta documentación según las necesidades específicas de tu proyecto. Si necesitas más detalles o tienes alguna pregunta, ¡no dudes en preguntar!
